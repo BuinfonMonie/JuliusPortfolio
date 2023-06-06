@@ -5,7 +5,7 @@ const Experience = require ("../model/ExperienceModel");
 //funcions to get all the experience in the database
 async function getAllExperience(req, res, next){
     try {
-        const experiences = await Experience.find({}).sort({ createdAt: -1})
+        const experiences = await Experience.find({})
     
         return next(
             res.status(200).json(experiences)

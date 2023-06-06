@@ -30,7 +30,7 @@ app.use( (req, res, next) =>{
     next();
 });
 app.use(cors({
-    "origin" : ["http://127.0.0.1:1000"],
+    "origin" : ["http://127.0.0.1:3000", "https://monie-portfolio.vercel.app"],
     "methods" : ["GET", "POST", "DELETE", "PATCH"]
 }));
 

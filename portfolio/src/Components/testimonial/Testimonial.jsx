@@ -14,15 +14,15 @@ import client from "../../api/axios";
 
 
 export const Testimonial = () => {
-  const [testimonialData, setTestimonialData] = React.useState([])
+  const [testimonials, setTestimonials] = React.useState([])
 
-  React.useEffec(()=>{
+  React.useEffect(()=>{
       client.get("/testimonials")
       .then((response)=>{
         const data = response.data
-        setTestimonialData(data);
+        setTestimonials(data);
       })
-      .cath((error)=>{
+      .catch((error)=>{
         console.log("Testimonial Error: ",error)
       })
 

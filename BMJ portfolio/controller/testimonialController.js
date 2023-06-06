@@ -6,7 +6,7 @@ const Testimonial = require ("../model/TestimonialModel");
 async function getAllTestimonial(req, res, next){
 
     try {
-        const testimonial = await Testimonial.find({}).sort({ createdAt: -1})
+        const testimonial = await Testimonial.find({})
     
         return next(
             res.status(200).json(testimonial)
