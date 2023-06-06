@@ -23,23 +23,23 @@ const Experience = () => {
       <h5>What Skills I have</h5>
       <h2>My Experience</h2>
 
-      <div className="container experience_container">
+      <div className="container experience__container">
 
         {
           experienceData.map((expi, index) => {
             return(
-              <div className="experience_frontend">
+              <div className="experience_frontend" key={index}>
                 <h3>{expi.name}</h3> 
-                <div className="experience_content">
+                <div className="experience__content">
                   {
-                    expi.experience.map((skill, index)=>{
+                    expi.skill.map((skill, index)=>{
                       return (
                       
-                          <article className="experience_details">
-                            <MdVerified className="experience_details-icon" />
+                          <article className="experience__details" key={index}>
+                            <MdVerified className="experience__details-icon" />
                             <div>
-                              <h4>{skill.experienceName}</h4>
-                              <small className="text-light">{skill.experienceLevel}</small>
+                              <h4>{skill.skillName}</h4>
+                              <small className="text-light">{skill.skillLevel}</small>
                             </div>
                           </article>
                         

@@ -28,12 +28,12 @@ export const Portfolio = () => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item__image">
-                <img src={content.image} alt=" one" className="portImage" />
+                <img src={content.images} alt=" one" className="portImage" />
               </div>
               <h3> {content.title} </h3>
               <div className="portfolio__item__cta">
                 <a
-                  href={content.github}
+                  href={content.githubLink}
                   className="btn"
                   target="_blank"
                   rel="noreferrer"
@@ -41,7 +41,7 @@ export const Portfolio = () => {
                   Github
                 </a>
                 <a
-                  href={content.demo}
+                  href={content.liveLink}
                   className="btn btn-primary"
                   target="blank"
                   rel="noreferrer"
