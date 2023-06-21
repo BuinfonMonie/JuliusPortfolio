@@ -11,8 +11,8 @@ export const Header = () => {
         <h5>Hello I'm</h5> 
         <h1>MONIE JULIUS</h1>
          <h5 className='text-light'>Software Engineer </h5> 
-         <CTA/>//here we are using the imported CTA component <br/>
-         <HeaderSocial/>//same here From BMJ
+         <CTA/> BMJ IS PRESENT  <br/>
+         <HeaderSocial/>
          <div className='my_image'> 
            <img src={me} alt='myimage'/> 
            </div> 
