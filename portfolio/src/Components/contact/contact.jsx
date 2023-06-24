@@ -4,13 +4,13 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {AiOutlineLinkedin} from 'react-icons/ai' 
 import {BsWhatsapp} from 'react-icons/bs' 
 import {useRef} from 'react' 
-//import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com'
 const Contact = () => {
      const form = useRef();
 
 const sendEmail = (e) => {
 e.preventDefault();
-//emailjs.sendForm('service_5vuauza', 'template_fdnnl56', form.current, 'EmSdUNQzQuxkUqGWx') 
+emailjs.sendForm('service_o9m0u2e', 'template_tjrgszy', form.current, 'xYodGJxp2wyJXJSPx') 
 e.target.reset() 
 .then((result) => { 
     console.log(result.text)
