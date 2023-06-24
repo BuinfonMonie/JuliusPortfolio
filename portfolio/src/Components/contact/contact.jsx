@@ -28,8 +28,8 @@ e.target.reset()
 <article className='contact__option'> 
 <MdOutlineEmail className='contact__option__icon'/> 
 <h4>Email</h4> 
-<h5>myEmail@gmail.com</h5> 
-<a href='mailto:aldenovpoutine99@gmail.com' target='_blank'>send a message</a> 
+<h5>buinfonj@gmail.com</h5> 
+<a href='mailto:buinfonj@mail.com' target='_blank'>send a message</a> 
 </article>
 
  <article className='contact__option'> <AiOutlineLinkedin className='contact__option__icon'/> <h4>LinkedIn</h4> <h5>Profile</h5> <a href='https://www.linkedin.com/in/brown-djomo-844b96164/' target='_blank'>Tape me on LinkedIn</a> </article>
